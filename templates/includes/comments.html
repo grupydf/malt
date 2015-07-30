@@ -19,7 +19,7 @@
                     var disqus_identifier = '{{ content.date|strftime('%Y-%m-') ~ content.slug if DISQUS_ID_PREFIX_SLUG else content.slug }}';
                 {% endif %}
 
-                var disqus_url = 'http://grupydf.github.io/{{ content.url }}';
+                var disqus_url = '{{ SITEURL }}/{{ content.url }}';
                 var disqus_config = function () {
                     this.language = "{{ DEFAULT_LANG }}";
                 };
