@@ -14,7 +14,7 @@
 
 {% block content %}
 <div class="row">
-    {% set BREADCRUMB_ELEMENTS = [("Grupy-DF Blog", "blog"), ("Categorias", None)] %}
+    {% set BREADCRUMB_ELEMENTS = [("{} Blog".format(SITENAME), "blog"), ("Categorias", None)] %}
     {% include "includes/breadcrumbs.html" %}
     <div class="categories">
         <ul data-collapsible="accordion" class="collapsible popout collapsible-accordion">
