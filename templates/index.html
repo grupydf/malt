@@ -73,7 +73,11 @@
                 </div>
             </div>
             <div class="card-content article-contents">
+            {% if article.description %}
+                {{ article.description }}
+            {% else %}
                 {{ article.summary }}
+            {% endif %}
             </div>
             <div class="card-action">
                 <a href="{{ SITEURL }}/{{ article.url }}">Continuar lendo...</a>
