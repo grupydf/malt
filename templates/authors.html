@@ -20,7 +20,7 @@
             {% for author, articles in authors|sort %}
             <li class="">
                 <div class="collapsible-header" title="Autores {{ author.name|escape }}">
-                    {{ author.name }} <span class="pull-right pill blue-grey lighten-1 white-text">{{ articles|count }}</span>
+                    {{ author.name }} <span class="pull-right pill {{ MALT_BASE_COLOR }} lighten-1 white-text">{{ articles|count }}</span>
                 </div>
                 <div class="collapsible-body white" style="display: block;">
                     <div class="contents">

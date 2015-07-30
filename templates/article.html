@@ -22,14 +22,14 @@
 <div class="row">
     <div class="col s12 m12 l12 center-align animated bounceInDown slow article-meta">
         <h1 class="white-text">{{ article.title }}</h1>
-        <div class="article-metadata blue-grey-text text-lighten-5">
+        <div class="article-metadata {{ MALT_BASE_COLOR }}-text text-lighten-5">
             <span class="article-author-name">
-                <a href="{{ SITEURL }}/{{ article.author.url }}" title="{{ article.author.name|escape }}" class="blue-grey-text text-lighten-5">
+		    <a href="{{ SITEURL }}/{{ article.author.url }}" title="{{ article.author.name|escape }}" class="{{ MALT_BASE_COLOR }}-text text-lighten-5">
                     <i class="fa fa-user"></i> {{ article.author.name }}
                 </a>
             </span>
             <span class="article-category">
-                <a href="{{ SITEURL }}/{{ article.category.url }}" title="{{ article.category.name|escape }}" class="blue-grey-text text-lighten-5">
+		    <a href="{{ SITEURL }}/{{ article.category.url }}" title="{{ article.category.name|escape }}" class="{{ MALT_BASE_COLOR }}-text text-lighten-5">
                     <i class="fa fa-folder"></i> {{ article.category.name }}
                 </a>
             </span>
@@ -51,7 +51,7 @@
         <div class="article-tags">
             <span class="icon"><i title="Tags do artigo" class="fa fa-tags"></i></i></span>
             {% for tag in article.tags %}
-            <span class="pill blue-grey lighten-2"><a class="white-text" href="{{ SITEURL }}/{{ tag.url }}" title="Tag '{{ tag.name|escape }}'">{{ tag.name }}</a></span>
+            <span class="pill {{ MALT_BASE_COLOR }} lighten-2"><a class="white-text" href="{{ SITEURL }}/{{ tag.url }}" title="Tag '{{ tag.name|escape }}'">{{ tag.name }}</a></span>
             {% endfor %}
         </div>
     </div>

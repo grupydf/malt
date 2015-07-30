@@ -16,7 +16,7 @@
     {% set BREADCRUMB_ELEMENTS = [("{} Blog".format(SITENAME), "blog"), ("Tags", None)] %}
     {% include "includes/breadcrumbs.html" %}
     <div id="tags" class="col s12 white z-depth-1">
-        <div class="row blue-grey" id="search-bar">
+        <div class="row {{ MALT_BASE_COLOR }}" id="search-bar">
             <form id="tag-search"  onkeypress="return event.keyCode != 13;">
                 <div class="input-field">
                     <i class="fa fa-search fa-2x" id="search-icon"></i>
@@ -27,7 +27,7 @@
 
         <div class="row" id="all-tags">
             {% for tag, articles in tags|sort %}
-            <span class="pill blue-grey lighten-2">
+            <span class="pill {{ MALT_BASE_COLOR }} lighten-2">
                 <a class="white-text" href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>
             </span>
             {% endfor %}

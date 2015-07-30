@@ -21,7 +21,7 @@
             {% for category, articles in categories|sort %}
             <li class="">
                 <div class="collapsible-header" title="Categoria {{ category.name|escape }}">
-                    {{ category.name }} <span class="pull-right pill blue-grey lighten-1 white-text">{{ articles|count }}</span>
+                    {{ category.name }} <span class="pull-right pill {{ MALT_BASE_COLOR }} lighten-1 white-text">{{ articles|count }}</span>
                 </div>
                 <div class="collapsible-body white" style="display: block;">
                     <div class="contents">

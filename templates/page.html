@@ -22,9 +22,9 @@
 <div class="row">
     <div class="col s12 m12 l12 center-align animated bounceInDown slow page-meta">
         <h1 class="white-text">{{ page.title }}</h1>
-        <div class="page-metadata blue-grey-text text-lighten-5">
+        <div class="page-metadata {{ MALT_BASE_COLOR }}-text text-lighten-5">
             <span class="page-author-name">
-                <a href="{{ SITEURL }}/{{ page.author.url }}" title="{{ page.author.name|escape }}" class="blue-grey-text text-lighten-5">
+                <a href="{{ SITEURL }}/{{ page.author.url }}" title="{{ page.author.name|escape }}" class="{{ MALT_BASE_COLOR }}-text text-lighten-5">
                     <i class="fa fa-user"></i> {{ page.author.name }}
                 </a>
             </span>
