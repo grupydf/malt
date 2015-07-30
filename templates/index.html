@@ -42,7 +42,7 @@
                     {% if not HIDE_AUTHOR_AVATAR %}
                     <div class="col s2 m2 l2 article-author-avatar center-align hide-on-med-and-down">
                         <a href="{{ SITEURL }}/{{ article.author.url }}">
-                            <img class="responsive-img circle" title="{{ article.author.name|escape }}"  alt="{{ article.author.name|escape }}" src="{{ GET_AVATAR(article.author.name) }}"/>
+                            <img class="responsive-img circle" title="{{ article.author.name|escape }}"  alt="{{ article.author.name|escape }}" src="{{ GET_AVATAR(article.author.name, MEMBROS) }}"/>
                         </a>
                     </div>
                     {% endif %}
