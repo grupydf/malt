@@ -6,9 +6,14 @@ Malt é um tema para o Pelican que tem como base o framework CSS `materialize`_ 
 .. image:: https://github.com/grupydf/malt/blob/master/screenshots/malt-home.png
 
 Por quê Malt?
-=============
+-------------
 
 Por que no fim das contas um Grupy tem como objetivo juntar programadores Python para tomar cerveja, e um dos "materiais" da cerveja é o malte. É eu sei, trocadilho tosco. Mas eu não sou conhecido por fazer piadas boas, mas sim por programar bem :)
+
+Funcionalidades
+---------------
+
+Para uma lista completa e detalhada das funcionalidade do tema leia a documentação de `Funcionalidades`_.
 
 Licença
 -------
@@ -32,3 +37,4 @@ Licença
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 .. _materialize: http://materializecss.com/
+.. _Funcionalidades: https://github.com/grupydf/malt/blob/master/funcionalidades.rst
