@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block banner %}
-<div class="hero hero-article" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ GET_ARTICLE_IMAGE(article) }}')">
+<div class="hero hero-article" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ SITEURL }}/{{ GET_ARTICLE_IMAGE(article, ARTICLE_BANNERS_FOLDER) }}')">
 </div>
 {% endblock %}
 
