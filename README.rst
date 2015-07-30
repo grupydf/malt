@@ -3,6 +3,8 @@ Malt: Material for beer
 
 Malt é um tema para o Pelican que tem como base o framework CSS `materialize`_ desenvolvido para ser utilizado no site do GrupyDF e está sendo adaptado para todos os outros Grupys interessados em utilizar.
 
+.. image:: https://github.com/grupydf/malt/blob/master/screenshots/malt-home.png
+
 Por quê Malt?
 =============
 
