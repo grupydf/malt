@@ -29,6 +29,20 @@
         <link href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE }}.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         {% endblock %}
 
+        <style type="text/css">
+          .hero {
+            height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0 0%, rgba(0, 0, 0, 0) url('{{ SITEURL }}/{{ SITE_BACKGROUND_IMAGE }}'); repeat scroll 0 0;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            overflow: hidden;
+          }
+        </style>
         <!-- Metadata -->
         {# TODO: Implement this #}
         {% block seo %}
@@ -49,7 +63,7 @@
 
             <!-- Banner -->
             {% block banner %}
-            <div class="hero parallax-effect" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0 0%, rgba(0, 0, 0, 0) url('{{ SITEURL }}/{{ SITE_BACKGROUND_IMAGE }}') repeat scroll 0 0;">
+            <div class="hero parallax-effect">
                 <div class="container">
                     <div class="hero-content animated bounceInDown slow">
                         {% block bannerimage %}
