@@ -46,3 +46,4 @@ def GET_ARTICLE_AT_GITHUB(article, repo, branch):
     base = os.path.relpath(article.source_path, os.getcwd())
     url = "{}/tree/{}/{}"
     return url.format(repo, branch, base)
+    return os.path.join(repo, 'tree/', branch, base)
