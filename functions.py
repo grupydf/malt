@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+from md5 import md5
+import functools
 import os
 import random
-import functools
-from md5 import md5
+
 
 def GET_AVATAR(autor, membros):
     if autor in membros:
@@ -27,6 +28,7 @@ def GET_AVATAR(autor, membros):
         username = "default_avatar.gif"
     return formatter.format(username)
 
+
 def GET_ARTICLE_IMAGE(article, root):
     if hasattr(article, 'image'):
         img = article.image
@@ -41,6 +43,7 @@ def GET_ARTICLE_IMAGE(article, root):
     banners = map(functools.partial(os.path.join, root), os.walk(base).next()[2])
     random.seed(article.date)
     return random.choice(banners)
+
 
 def GET_ARTICLE_AT_GITHUB(article, repo, branch):
     base = os.path.relpath(article.source_path, os.getcwd())
