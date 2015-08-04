@@ -4,6 +4,7 @@
 from md5 import md5
 import functools
 import os
+import posixpath
 import random
 
 
@@ -46,7 +47,5 @@ def GET_ARTICLE_IMAGE(article, root):
 
 
 def GET_ARTICLE_AT_GITHUB(article, repo, branch):
-    base = os.path.relpath(article.source_path, os.getcwd())
-    url = "{}/tree/{}/{}"
-    return url.format(repo, branch, base)
-    return os.path.join(repo, 'tree/', branch, base)
+    base = posixpath.relpath(article.source_path, os.getcwd())
+    return posixpath.join(repo, 'tree/', branch, base)
