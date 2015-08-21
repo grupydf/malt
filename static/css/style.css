@@ -123,6 +123,38 @@ footer.page-footer {
   padding-bottom: 30px;
 }
 
+.figure {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.figure img {
+    border-radius: 2px;
+}
+
+.figure p.caption {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 4px;
+    text-align: center;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.figure div.legend {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    text-align: center;
+}
+
 @media (max-width: 992px) {
   .hero .logo {
     height: 200px;
