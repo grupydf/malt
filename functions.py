@@ -49,3 +49,10 @@ def GET_ARTICLE_IMAGE(article, root):
 def GET_ARTICLE_AT_GITHUB(article, repo, branch):
     base = posixpath.relpath(article.source_path, os.getcwd())
     return posixpath.join(repo, 'tree/', branch, base)
+
+
+def GET_LINK(link):
+    if link.startswith('http://') or link.startswith('https://'):
+        return link
+    else:
+        return '/' + link
