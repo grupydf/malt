@@ -45,7 +45,7 @@
                             {% if 'buttons' in item %}
                             <div class="center">
                                 {% for button in item['buttons'] %}
-                                <a class="{{ MALT_BASE_COLOR }} waves-effect waves-light btn" href="/{{ button['href'] }}">{{ button['text'] }}</a>
+                                <a class="{{ MALT_BASE_COLOR }} waves-effect waves-light btn" href="{{ GET_LINK(button['href']) }}">{{ button['text'] }}</a>
                                 {% endfor %}
                             </div>
                             {% endif %}
