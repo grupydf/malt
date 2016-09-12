@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-from md5 import md5
+import hashlib
 import functools
 import os
 import posixpath
@@ -15,7 +15,7 @@ def GET_AVATAR(autor, membros):
             username = membros[autor]['github']
         elif 'email' in membros[autor]:
             formatter = "http://www.gravatar.com/avatar/{}?s=250"
-            username = md5(membros[autor]['email'].strip().lower()).hexdigest()
+            username = hashlib.md5(membros[autor]['email'].strip().lower().encode("utf-8")).hexdigest()
         elif 'twitter' in membros[autor]:
             formatter = "http://avatars.io/twitter/{}"
             username = membros[autor]['twitter']
